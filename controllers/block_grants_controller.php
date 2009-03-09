@@ -9,6 +9,16 @@ class BlockGrantsController extends AppController {
 		$this->set('blockGrants', $this->paginate());
 	}
 
+    function display()
+    {
+        $year = $this->params['year'];
+        $month = $this->params['month'];
+        $date = $this->params['date'];
+        $_query = $year .'-'. $month .'-'. $date;
+        $this->set('data', $_query);
+    }
+
+
 	function view($id = null) {
 		if (!$id) {
 			$this->Session->setFlash(__('Invalid BlockGrant.', true));
