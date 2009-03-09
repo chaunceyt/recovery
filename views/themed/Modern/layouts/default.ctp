@@ -1,5 +1,5 @@
 <?php
-
+/* Using CheeseCake to learn how to theme a cakephp app */
 /**
  * File used as default layout for 'Modern' theme
  *
@@ -42,9 +42,9 @@ echo $scripts_for_layout;
         <div id="menu">
             <ul class="menu">
                 <li class="firstitem"><?php echo $html->link(__('Home', true), '/',array('title' => __('Return to Homepage', true), 'accesskey' => 'h')); ?></li>
-                <li><?php echo $html->link(__('Browse', true), '/photos/browse', array('title' => __('Browse Archives', true), 'accesskey' => 'u')); ?></li>
-                <li><?php echo $html->link(__('Comments', true), '/comments', array('title' => __('Browse Comments', true), 'accesskey' => 'c')); ?></li>
-                <li><?php echo $html->link(__('About', true), '/pages/about', array('title' => __('About', true))); ?></li>
+                <li><?php echo $html->link(__('Block Grants', true), '/block_grants', array('title' => __('Block Grants', true), 'accesskey' => 'u')); ?></li>
+                <li><?php echo $html->link(__('Communications', true), '/communications', array('title' => __('Communications', true), 'accesskey' => 'c')); ?></li>
+                <li><?php echo $html->link(__('Weekly Updates', true), '/weekly_updates', array('title' => __('Weekly Updates', true))); ?></li>
                 <li><?php echo ($session->check('Auth.User') ? $html->link(__('Logout', true), '/users/logout', array('title' => __('Logout', true))) : $html->link(__('Login', true), '/users/login', array('title' => __('Login', true)))); ?></li>
             </ul>
             <?php echo ife($session->read('Auth.User.role') == 'Admin', $this->element('admin_menu'), ''); ?>
