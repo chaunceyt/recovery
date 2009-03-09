@@ -32,6 +32,12 @@
  * to use (in this case, /app/views/pages/home.ctp)...
  */
 	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+
+
+	Router::connect('/:year/:month/:date/comms', array('controller' => 'communications', 'action' => 'display'));
+	Router::connect('/:year/:month/:date/fbga', array('controller' => 'block_grants', 'action' => 'display'));
+	Router::connect('/:year/:month/:date/weekly', array('controller' => 'weekly_updates', 'action' => 'display'));
+
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */

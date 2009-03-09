@@ -9,6 +9,15 @@ class CommunicationsController extends AppController {
 		$this->set('communications', $this->paginate());
 	}
 
+    function display()
+    {
+        $year = $this->params['year'];
+        $month = $this->params['month'];
+        $date = $this->params['date'];
+        $_query = $year .'-'. $month .'-'. $date;
+        $this->set('data', $_query);
+    }
+
 	function view($id = null) {
 		if (!$id) {
 			$this->Session->setFlash(__('Invalid Communication.', true));
