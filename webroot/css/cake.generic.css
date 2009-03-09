@@ -28,7 +28,7 @@
 
 /* General Style Info */
 body {
-	background: #003d4c;
+	background: #545353;
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
@@ -89,19 +89,19 @@ ul, li {
 	padding: 10px 20px;
 }
 #header h1 {
-	background: #003d4c url('../img/cake.icon.gif') no-repeat left;
-	color: #fff;
+	background: #54533 url('../img/recovery_logo.png') no-repeat left;
+	//color: #fff;
 	padding: 0px 30px;
 }
 #header h1 a {
 	color: #fff;
-	background: #003d4c;
+	background: #545353;
 	font-weight: normal;
 	text-decoration: none;
 }
 #header h1 a:hover {
 	color: #fff;
-	background: #003d4c;
+	background: #545353;
 	text-decoration: underline;
 }
 #content{
