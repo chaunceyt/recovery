@@ -1,7 +1,22 @@
 <?php
 class AppController extends Controller {
     var $components = array('Email');
-    
+    var $helpers = array('Html', 'Javascript');
+
+    var $view = 'Theme';
+
+    function beforeFilter()
+    {
+        $this->theme = 'Modern';
+    }
+    function beforeRender()
+    {
+        $this->theme = 'Modern';
+        $viewPaths = Configure::read('viewPaths');
+        array_unshift($viewPaths, array_pop($viewPaths));
+        Configure::write('viewPaths', $viewPaths);
+    }
+
     //initial nethod to send require email
     // i.e. 
     // HUD, Major Communications

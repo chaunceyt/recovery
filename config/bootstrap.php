@@ -42,4 +42,5 @@
  */
 //EOF
 date_default_timezone_set("America/New_York");
+$viewPaths = array(WWW_ROOT);
 ?>

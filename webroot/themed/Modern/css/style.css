@@ -1,0 +1,815 @@
+/* .............................. */
+/* Basic */
+/* .............................. */
+
+body {
+  text-align: left;
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 11px;
+  background-image: url(images/fond.png);
+  color: #666666;
+  margin:0;
+  padding: 15px 0 0 0;
+  }
+
+html, body {
+   min-height:100.1%;
+  }
+
+.gras {
+  font-weight: bold;
+  }
+
+.italique {
+  font-style: italic ;
+  }
+
+.orangeg {
+  color: #D58900;
+  font-weight: bold;
+  }
+
+.centre {
+  text-align: center;
+  }
+
+/* .............................. */
+/* main et titre */
+/* .............................. */
+
+#surtitre {
+  font-size: 12px;
+  text-align:left;
+  width: 600px;
+  margin: 0 auto;
+  color: #ffffff;
+  }
+
+#surtitre a {
+  color: #ffffff;
+  }
+
+#surtitre a:hover {
+  color: #EDAD00;
+  }
+
+#main {
+  margin-right: auto;
+  margin-left: auto;
+  width: 840px;
+  }
+
+#haut {
+  background-image: url(images/haut.png);
+  height: 32px;
+  }
+#bord {
+  background-image: url(images/bord.png);
+  }
+
+#bas {
+  background-image: url(images/bas.png);
+  height: 18px;
+  }
+
+.image-info {
+    background:#f5f5f5;
+    border:1px solid #ccc;
+    padding:20px;
+    text-align:justify;
+    width:80%;
+    margin:0px auto;
+    margin-top:15px;
+    line-height:16px;
+    }
+
+.message
+{
+    font-size:14px;
+    padding:12px;
+}
+
+#errorMessage
+{
+    color:red;
+}
+
+#successMessage
+{
+    color:green;
+}
+.error_message
+{
+    width: 45%;
+    font-size:14px;
+    padding: 5px;
+    color:red;
+}
+
+hr {
+  border: 0px;
+}
+
+h1 {
+    float:left;
+    clear:left;
+    font-weight:bold;
+    font-size:11px;
+    letter-spacing:2px;
+    color:#666;
+    margin:0px;
+    margin-left:5px;
+    padding:0px;
+    }
+
+#page {
+    padding:20px;
+    width:85%;
+    margin:0px auto;
+    }
+
+ul.menu
+{
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+}
+
+ul.menu li
+{
+    display: inline;
+}
+
+ul.menu li:before {
+    content: ' • ';
+}
+
+ul.menu li.firstitem:before {
+    content: '';
+}
+
+.thumbnails {
+    border:1px solid #515151;
+    padding:3px;
+    margin:3px;
+    }
+
+.futureThumbnails {
+    margin: 3px;
+    padding: 3px;
+    border: 1px solid #FF0000;
+}
+
+.currentThumbnail {
+    border:1px solid #D58900;
+    padding:3px;
+    margin:3px;
+    }
+
+#calendar ul
+{
+text-align: center;
+padding-bottom: 5px;
+padding-top: 5px;
+padding-left: 0;
+margin-top: 0;
+/* cancels gap caused by top padding in Opera 7.54 */
+margin-left: 0;
+background-color: #ddd;
+color: #343434;
+width: 100%;
+font-family: Arial,Helvetica,sans-serif;
+line-height: 18px;
+/* fixes Firefox 0.9.3 */
+}
+
+#calendar ul li
+{
+display: inline;
+padding: 5px;
+border: 0px;
+margin:0 5px 0 0;
+}
+
+#calendar ul li a
+{
+/*padding: 5px;*/
+color: #343434;
+text-decoration: none;
+/*font-weight: bold;*/
+}
+
+#calendar ul li a:hover
+{
+/*background-color: #369;*/
+color: white;
+font-weight: bold;
+}
+
+#calendar .year
+{
+border-left: 3px solid #369;
+background-color: #000;
+color: #aaa;
+}
+
+.nolinebreak {
+    display: none;
+}
+
+ul.commentlist {
+  list-style-type: none;
+  }
+
+.commentlist li {
+   border-top:1px dotted #cccccc;
+   width: 500px;
+    margin: 0 auto;
+   padding-bottom:5px;
+  padding-top:5px;
+  text-align: left;
+    margin-right: 50px;
+}
+
+.commentlist li a {
+   font-style: italic ;
+  }
+
+.commentlist li:hover {
+    background:#eeeeee;
+    }
+
+.title {
+    font-weight:bold;
+    font-size:14px;
+    letter-spacing:1px;
+    margin:0px;
+    margin-bottom:5px;
+    margin-left:15px;
+    padding:0px;
+    }
+
+li.moderation {
+  border: 1px solid #FF0000;
+}
+
+#page ul.menu
+{
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+}
+
+#page ul.menu li
+{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+}
+
+#page ul.menu li:before {
+    content: ' • ';
+}
+
+#page ul.menu li.firstitem:before {
+    content: '';
+}
+
+#page ul.menu li a
+{
+    font-style: normal;
+}
+
+#image img#futurePhoto {
+    padding: 0px;
+    border: 1px solid #FF0000;
+}
+
+#loginform div {
+    margin: 10px;
+    width: 325px;
+}
+
+#loginform label {
+    float: left;
+    width: 80px;
+    text-align: right;
+    margin-right: 15px;
+}
+
+#loginform .comment-button {
+    margin-left: 105px;
+    margin-right: 15px;
+}
+
+#loginform div.infobox {
+  float: right;
+  width: 150px;
+  height: auto;
+  margin: 0px 0px 10px 10px;
+  padding: 5px;
+  border: 1px solid #666666;
+  background-color: #ffffe1;
+  color: #666666;
+  font-size: 88%;
+}
+
+#admin-toolbar {
+  margin: 3px;
+  padding: 3px;
+}
+
+#admin-toolbar img {
+  border: 0px;
+  margin: 1px;
+  padding: 3px;
+  background: #DDDDDD;
+}
+
+img#photo {
+  border: 0px;
+}
+
+.caption
+{
+    width: 100%;
+    color: black;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 0px;
+    text-align: left;
+    line-height: 18px;
+    background-color: #DDDDDD;
+}
+
+.caption a
+{
+    color: black;
+    text-decoration: underline;
+}
+
+.content
+{
+    width: 100%;
+    padding: 5px;
+    background: #FEFEFE;
+    padding-bottom: 10px;
+}
+
+.gui
+{
+    padding: 5px;
+}
+
+/* .............................. */
+/* Link stylings */
+/* .............................. */
+
+a {
+  color: #666666;
+  text-decoration: none;
+  }
+
+a:hover {
+  text-decoration: none;
+  color: #D58900;
+  }
+
+
+/* .............................. */
+/* Menu */
+/* .............................. */
+
+#menu {
+  width: 575px;
+  text-align: right;
+   margin: 0 auto;
+   padding-top:0px;
+   padding-bottom:2px;
+  border-bottom: 1px solid #cccccc;
+  font-size: 12px;
+   }
+
+#menu a {
+  text-decoration: none;
+  color: #666666;
+  font-size: 12px;
+  }
+
+#menu a:hover {
+  text-decoration: none;
+  color: #D58900;
+  font-size: 12px;
+  }
+
+
+/* .............................. */
+/* Image */
+/* .............................. */
+
+#image img{
+   padding-top:7px;
+   padding-bottom:3px;
+   border:none;
+   }
+
+
+/* .............................. */
+/* sousphoto */
+/* .............................. */
+
+#sousphoto {
+  width: 500px;
+  margin:0px auto;
+  text-align: left;
+  font-size: 12px;
+  }
+
+.titre {
+  color: #D58900;
+  }
+
+.soustitre {
+  width: 500px;
+  padding-top:1px;
+  padding-bottom: 10px;
+  font-size: 11px;
+  }
+
+.soustitre  a{
+    border-bottom: 1px dotted #aaa;
+}
+.fleche {
+  float:right;
+  text-align: right;
+  }
+
+/* .............................. */
+/* Vignettes */
+/* .............................. */
+
+#vignettes {
+  width: 500px;
+  margin:0px auto;
+  text-align: center;
+  }
+
+/* .............................. */
+/* credits */
+/* .............................. */
+
+#credits {
+  font-size: 10px;
+  color: #9C9C9C;
+  }
+
+#credits a {
+  text-decoration: none;
+  color: #9C9C9C;
+  }
+
+#credits a:hover {
+  text-decoration: none;
+  color: #EDAD00;
+  }
+
+/* .............................. */
+/* liste categories */
+/* .............................. */
+
+#categorie {
+  width: 500px;
+  height: auto;
+  min-height: 370px;
+  _height: 370px;
+  padding-top: 7px;
+  padding-bottom: 1px;
+  margin:0px auto;
+  }
+
+#catlist {
+  float:left;
+  height: auto;
+  min-height: 370px;
+  _height: 370px;
+  text-align: left;
+  padding-right: 30px;
+  }
+
+#catlist li{
+  list-style-type:none;
+  }
+
+#catthumbs a:link img {
+  padding: 4px;
+  border: 1px solid #ffffff;
+  }
+
+#catthumbs a:visited img {
+  padding: 4px;
+  border: 1px solid #ffffff;
+  }
+
+#catthumbs a:hover img {
+  padding: 4px;
+  border: 1px solid #D58900;
+  }
+
+/* .............................. */
+/* page licence*/
+/* .............................. */
+
+#licence {
+   text-align: left;
+   width: 500px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin:0px auto;
+   }
+
+#conditions {
+  margin: 0px 25px 0px 25px;
+  }
+
+
+
+/* .............................. */
+/* page liens */
+/* .............................. */
+
+#liens {
+   text-align: left;
+   width: 500px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin:0px auto;
+   }
+
+#liens a {
+  color: #D58900;
+  text-decoration: none;
+  font-weight: bold;
+  }
+
+#liens a:hover {
+  text-decoration: none;
+  color: #666666;
+  font-weight: bold;
+  }
+
+#liensg {
+  float: left;
+  position: relative;
+  }
+
+#liensd {
+  margin-left: 200px;
+  margin-bottom: 30px;
+  }
+
+/* .............................. */
+/* page commentaires */
+/* .............................. */
+
+#commain {
+  margin-right: auto;
+  margin-left: auto;
+  width: 440px;
+  }
+
+#comhaut {
+  background-image: url(images/comhaut.png);
+  height: 25px;
+  }
+
+#combord {
+  background-image: url(images/combord.png);
+  }
+
+#combas {
+  background-image: url(images/combas.png);
+  height: 19px;
+  }
+
+#commain2 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 440px;
+  }
+
+#comhaut2 {
+  background-image: url(images/comhaut.png);
+  height: 25px;
+  }
+
+#combord2 {
+  background-image: url(images/combord.png);
+  }
+
+#combas2 {
+  background-image: url(images/combas.png);
+  height: 19px;
+  }
+
+#comthumb {
+  float: left;
+  position: relative;
+  padding: 10px 10px 0 30px;
+  }
+
+#comnav {
+  width: 380px;
+  margin: 0 auto;
+  border-bottom: 1px solid #cccccc;
+  font-size: 10px;
+  text-align: center;
+  padding-bottom: 5px;
+  }
+
+#comcom {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  }
+
+#commain ul {
+   display: inline;
+   list-style:none;
+  }
+
+#commain li {
+   border-top:1px dotted #cccccc;
+   width: 380px;
+    margin: 0 auto;
+   padding-bottom:5px;
+  padding-top:5px;
+  text-align: left;
+  }
+
+#commain li a {
+   font-style: italic ;
+  }
+
+#commain li:hover {
+    background:#eeeeee;
+    }
+
+#addcomment {
+   width: 380px;
+    margin: 0 auto;
+  text-align: left;
+  padding-bottom: 1px;
+  }
+
+input.input, textarea.input, select.input{
+  width:50%;
+  border:1px solid #cccccc;
+  color:#666666;
+  background:#eeeeee;
+  padding:6px;
+  margin:3px;
+}
+
+.text {
+  border:0px solid #cccccc;
+  color:#666666;
+  background:#ffffff;
+}
+
+.comment-button {
+  background: #eeeeee;
+  border:1px solid #cccccc;
+  color: #666666;
+  font-size: 11px;
+  font-weight: bold;
+  }
+
+.link-button {
+  background: #eeeeee;
+  border:1px solid #cccccc;
+  color: #666666;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 0px 8px 1px 8px;
+  }
+
+label {
+background-color:#CCCCCC;
+border:1px solid #cccccc;
+color:#000000;
+display:block;
+float:left;
+font-size:115%;
+font-weight:normal;
+line-height:1.1;
+margin-right:2px;
+margin-top:4px;
+margin-bottom:2px;
+padding-left:6px;
+padding-top:6px;
+padding-bottom:6px;
+width:140px;
+}
+
+
+/* .............................. */
+/* page commentaires */
+/* .............................. */
+
+#dolicho {
+  text-align: left;
+   width: 500px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin:0px auto;
+  }
+
+
+/*
+ * Lightbox CSS
+*/
+#lightbox {
+    background-color: #eee;
+    padding: 10px;
+    border-bottom: 1px solid #666;
+    border-right: 1px solid #666;
+}
+#overlay {
+    text-align: left;
+    background-image: url(addons/lightbox/overlay.png);
+}
+#lightboxCaption {
+    color: #333;
+    background-color: #eee;
+    font-size: 90%;
+    text-align: center;
+    border-bottom: 1px solid #666;
+    border-right: 1px solid #666;
+}
+* html #overlay {
+    background-color: #000;
+    background-image: url(addons/lightbox/blank.gif);
+    filter: Alpha(opacity=50);
+}
+
+#relatedTags {
+    margin-left: 10px;
+    text-align: left;
+}
+
+#allTags{
+    margin-left: 10px;
+    text-align: left;
+}
+
+    .rating {
+        cursor: pointer;
+        margin:0pt 0px 0pt 40px;
+    }
+
+    .ratingPos {
+        float: left;
+        width: 20px;
+    }
+    .rating:after {
+        content: '.';
+        display: block;
+        height: 0;
+        width: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    .cancel,
+    .star {
+        float: left;
+        width: 17px;
+        height: 15px;
+        overflow: hidden;
+        text-indent: -999em;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    .cancel a,
+    .star a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-position: 0 0px;
+    }
+
+    div.rating div.on a {
+        background-position: 0 -16px;
+    }
+
+    div.rating div.hover a,
+    div.rating div a:hover {
+        background-position: 0 -32px;
+    }
+
+.error, .error-message, #authErrorMessage, #loginErrorMessage {
+    color: red;
+    padding: 5px;
+}
