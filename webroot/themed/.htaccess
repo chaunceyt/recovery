@@ -1,0 +1,4 @@
+<filesmatch \.(thtml|ctp)$="">
+DENY FROM ALL
+</filesmatch>
+
